@@ -1,116 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Energize Fitness</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet"
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Energize Website</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="Assets/logo.png" alt="Energize Fitness">
-            </div> 
-            <div class="nav">
+      <nav>
+        <img src="Assets/logo.png" alt="" />
+        <div class="nav">
           <ul class="nav-links" id="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#">About Us</a></li>
             <li><a href="#">Blog</a></li>
-            <li><button class="login"><a href="#"><i class="fa fa-user" aria-hidden="true"></i>Log In</a></button></li>
+            <li>
+              <button class="log-in">
+                <a href="#">
+                  <i class="fa fa-user" aria-hidden="true" id="logo"></i>Log
+                  In</a
+                >
+              </button>
+            </li>
           </ul>
-            </div> 
-        </nav>
+          <div id="navbar" class="navbar">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        </div>
+      </nav>
+      <h1>Transform Your Fitness Journey. Start Today!</h1>
     </header>
-    
-    <section class="hero">
-            <h1 class="header-text">
-                Transform Your Fitness Journey. Start Today!
-            </h1>
-        <p>
-            Track workouts, monitor progress, and achieve your goals with our all-in-one fitness app.
-        </p>
-        <div class="buttons">
-             <div>
-                  <button class="get-started">
-                  <a href="#">Get Started</a>
-              </div>
-              <div>
-                <button class="Demo"><i class="fa-solid fa-dumbbell"></i><a href="#">Book a Demo</a></button>
-              </div>
-        </div>
-        <div class="hero-image">
-              <img src="Assets/hero-transparent-background.png" alt="Hero">
-        </div>
+
+    <section>
+      <p>
+        Track withouts, monitor progress, and achieve your goals with our
+        all-in-one fitness app.
+      </p>
+      <button class="get-started">
+        <a href="#" style="color: white"> Get Started </a>
+      </button>
+      <button class="book">
+        <a href="#"> <i class="fa-solid fa-dumbbell"></i>Book a Demo</a>
+      </button>
+      <img src="Assets/hero-bg-mobile.png" alt="" class="img-mobile" />
+      <img src="Assets/hero-transparent-background.png" alt="" />
     </section>
 
+    <!-- video-preview-part -->
     <div class="section-2">
-        <h2>
-            Discover how our app works and get fit in no time!
-        </h2>
-        <img src="Assets/video-preview.png" alt="Video Preview">
-        <button><a href="#">Get Started</a></button>
+      <h2>Discover how our app works and get fit in no time</h2>
+      <img src="Assets/video-preview.png" alt="" /> <br />
+      <button><a href="#" style="color: white">Get Started</a></button>
     </div>
-    
+    <!-- end-of-video-preview-part -->
+
+    <!-- testimony-part -->
     <div class="section-3">
-        <h2>Hear from our satisfied users who transformed their lives.</h2>
-        <div class="cards">
-            <div class="card">
-                “I've lost 10 pounds in just a month! This app keeps me motivated and on track with my fitness goals.”
-                <h3>Alice Johnson</h3>
-                Health Coach
-            </div>
-            <div class="card">
-                “The workout plans are easy to follow, and the progress tracking feature is incredibly helpful. I feel stronger every day!”
-                <h3>Mark Thompson</h3>
-                Personal Trainer
-            </div>
-            <div class="card">
-                “This app has changed my fitness routine completely. I love the community support and challenges!”
-                <h3>Sarah Parker</h3>
-                Fitness Enthusiast
-            </div>
+      <h3>Hear from our satisfied users who transformed their lives</h3>
+      <div class="container-1">
+        <div class="box">
+          "I've lost 10 pounds in just a month! This app keeps me motivated and
+          on track with my fitness goals."
+          <div class="span">
+            <span style="font-weight: 600"> Alice Johnson </span>
+            <span> Health Coach </span>
+          </div>
         </div>
-    </div>
 
+        <div class="box">
+          "The workout plans are easy to follow, and the progress tracking
+          feature is incredibly helpful. i feel stronger every day!"
+          <div class="span">
+            <span style="font-weight: 600"> Mark Thompson </span>
+            <span>Personal Trainer </span>
+          </div>
+        </div>
+        <div class="box">
+          "This app has changed my fitness routine completely. I love the
+          community support and challenges!"
+          <div class="span">
+            <span style="font-weight: 600">Sarah parker</span>
+            <span>Fitness Enthusiast</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end-of-testimony-part -->
+
+    <!-- pricing-part -->
     <div class="section-4">
-        <h2 class="pricing">
-            Pricing
-        </h2>
-        <p class="pricing-text">
-          Start with our free plan and unlock premium features as you grow.  
-        </p>
-        <div class="pricing-cards">
-            <div class="pricing-card basic">
-                <h3>Basic</h3>
-                <p>Ideal for beginners to track workouts and monitor progress.</p>
-                <h2>Free<span class="note">*No credit card Needed</span></h2>
-                <ul>
-                    <li>Customizable workout plans</li>
-                    <li>Track daily progress</li>
-                    <li>Nutrition tracker</li>
-                    <li>Access to community challenges</li>
-                </ul>
-                <button><a href="#">Get Started</a></button>
-            </div>
+      <h4>Pricing</h4>
+      <p id="start">
+        Start with our free plan and unlock premium features as you grow.
+      </p>
+      <div class="container-2">
+        <div class="box-1">
+          <span id="basic">Basic</span>
+          <p id="ideal">
+            Ideal for beginners to track withouts and monitor progress.
+          </p>
 
-            <div class="pricing-card pro">
-                <h3>Pro</h3>
-                <p>Everything in the Basic plan plus advanced features for serious athletes.</p>
-                <h2>$29<span>/month</span></h2>
-                <span>Unlock premium features:</span>
-                <ul>
-                    <li>Personalized coaching</li>
-                    <li>Advanced analytics</li>
-                    <li>Offline access</li>
-                </ul>
-                <button><a href="#">Get Started</a></button>
-            </div>
-            <p>All prices are in USD and charged per month with applicable taxes added at checkout.</p>
+          <p id="free">
+            <span style="font-size: 30px">Free</span> *No credit card needed
+          </p>
+
+          <hr />
+          <ul>
+            <li>
+              <i class="fa fa-check" aria-hidden="true" id="icon"></i
+              >Customizable withouts plans
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true" id="icon"></i>Track
+              daily progress
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true" id="icon"></i>Nutrition
+              tracker
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true" id="icon"></i>Access to
+              community challenges
+            </li>
+          </ul>
+          <button><a href="#">Get Started</a></button>
+        </div>
+
+        <div class="box-2">
+          <span id="pro">Pro</span>
+          <p id="everything">
+            Everything in the Basic plan plus advanced features for serious
+            athletes.
+          </p>
+
+          <p id="month"><span style="font-size: 30px">$29</span> /month</p>
+          <hr />
+          <p id="unlock">Unlock premium features:</p>
+          <ul>
+            <li>
+              <i class="fa fa-check" aria-hidden="true" id="icon"></i
+              >Personalized coaching
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true" id="icon"></i>advanced
+              analytics
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true" id="icon"></i>Offline
+              access
+            </li>
+          </ul>
+          <button><a href="#">Get Started</a></button>
+        </div>
+      </div>
+      <p id="end">
+        All prices are in USD and charged per month with applicable taxes added
+        at checkout.
+      </p>
     </div>
+    <!-- end-of-pricing-part -->
 
+    <!-- FAQ-part -->
     <div class="section-5">
       <h5>Frequently Asked Questions</h5>
       <div class="container">
@@ -137,9 +193,10 @@
         </div>
       </div>
     </div>
-    
+    <!--End-of-FAQ-part -->
+
     <footer>
-      <img src="logo-white-footer.png" alt="" />
+      <img src="Assets/logo-white-footer.png" alt="" />
       <ul>
         <li><a href="#">Privacy Policy</a></li>
         <li><a href="#">Terms of Service</a></li>
@@ -147,6 +204,6 @@
       </ul>
       <p>&copy 2024 Fitness App by Emmanuel Nmaju. All rights reserved.</p>
     </footer>
-
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
